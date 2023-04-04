@@ -1,0 +1,132 @@
+.layout {
+  font-family: 'AllerLight';
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome {
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  text-align: inherit;
+  padding: 0;
+  width: inherit;
+  height: inherit;
+}
+
+#circle1 {
+  border: 3px solid #f694c1;
+  position: absolute;
+  width: max(27vw, 27vh);
+  height: max(27vw, 27vh);
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: rotateCC 4s linear infinite;
+}
+
+#circle2 {
+  border: 3px solid #e4c1f9;
+  position: absolute;
+  width: max(29vw, 29vh);
+  height: max(29vw, 29vh);
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: rotateC 4s linear infinite;
+}
+
+#circle3 {
+  border: 3px solid #ede7b1;
+  position: absolute;
+  width: max(31vw, 31vh);
+  height: max(31vw, 31vh);
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: rotateCC 4s linear infinite;
+}
+
+#circle4 {
+  border: 3px solid #a9def9;
+  position: absolute;
+  width: max(33vw, 33vh);
+  height: max(33vw, 33vh);
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: rotateC 4s linear infinite;
+}
+
+.container {
+  padding: 0px;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+.welcomeText {
+  margin-bottom: 0px;
+  padding: 0px 5px 0px 5px;
+  text-shadow: 0px 0px 5px #212529;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #212529;
+  color: white;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.creditText {
+  font-size: 25px;
+  padding: 5px;
+  -webkit-text-stroke-width: 0.25px;
+  -webkit-text-stroke-color: #212529;
+  text-shadow: 0px 0px 5px #212529;
+  color: white;
+}
+
+#authorize {
+  background-color: white;
+  border-radius: 25px;
+  color: black;
+  transition: 0.3s linear;
+}
+
+#authorize:hover {
+  background-color: #212529;
+  color: white;
+}
+
+.btn-outline-dark {
+  box-shadow: 0px 0px 10px #212529;
+  margin: 5px;
+}
+
+@keyframes rotateCC {
+  0% {
+    transform: rotateZ(-360deg)
+  }
+  100% {
+    transform: rotateZ(0deg)
+  }
+}
+
+@keyframes rotateC {
+  0% {
+    transform: rotateZ(360deg)
+  }
+  100% {
+    transform: rotateZ(0deg)
+  }
+}
